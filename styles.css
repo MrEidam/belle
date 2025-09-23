@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+img{
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.eidam{
+    width: 200px;
+    filter: drop-shadow(7.5px 7.5px 15px #222);
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+section article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    background: #444;
+    box-shadow: 7.5px 7.5px 15px #222;
+}
+
+a{
+    color: red;
+    transition: 1s;
+}
+a:hover{
+    color: lime;
+    transition: .15s;
+}
