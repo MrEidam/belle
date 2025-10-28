@@ -5,15 +5,136 @@
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
+/* MAX WIDTH 1000px */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+    background: #111;
+}
+
+header img{
+    height: 60px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    gap: 20px;
+}
+
+p{
+    font-size: 15px;
+}
+
+.red{
+    color: #f00;
+}
+
+.topPadding{
+    padding-top: 3rem;
+}
+.bottomPadding{
+    padding-bottom: 3rem;
+}
+
+.back{
+    background: linear-gradient(#181a1b, #242728 47%, #1e2021);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+#ser{
+    max-width: 1160px;
+
+}
+
+h3{
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1160px;
+}
+
+.service{
+    flex:1 1 30vw;
+    max-width:360px;
+    /*min-width:200px;*/
+    aspect-ratio:5/1;
+    background-color:#181a1b;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: left;
+    border-radius:8px;
+    margin: 0 11.6px 20px 11.6px;
+}
+.serImg{
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    background: #0400ff;
+    background: linear-gradient(135deg, rgba(4, 0, 255, 1) 0%, rgba(32, 0, 120, 1) 47%, rgba(10, 5, 5, 1) 100%);
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.service div img{
+    width: 40px;
+    height: 40px;
+}
+
+.brand{
+    padding: 10px;
+    width: 110px;
+    display: flex;
+    background: #181a1b;
+    flex-direction: column;
+}
+.brand img{
+    height: 40px;
+}
+.brand p{
+    font-size: 12px;
+}
+
+
+br{
+    background-color: lime;
+    height: 20px;
+    width: 100vw;
+}
+
+hr{
+    height: 20px;
+    width: 100vw;
+    color: #405;
+    background-color: #405;
+}
+
 body{
+    margin-top: 100px;
     color: #fff;
     background-color: #333;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    min-height: 100vh;
+    align-items: center;
 }
 img{
     aspect-ratio: 1/1;
@@ -22,31 +143,4 @@ img{
 .eidam{
     width: 200px;
     filter: drop-shadow(7.5px 7.5px 15px #222);
-}
-
-section{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-section article{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-    border-radius: 1rem;
-
-    background: #444;
-    box-shadow: 7.5px 7.5px 15px #222;
-}
-
-a{
-    color: red;
-    transition: 1s;
-}
-a:hover{
-    color: lime;
-    transition: .15s;
 }
